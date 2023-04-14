@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="path_to_attricss_file.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="./zomatoicon.png">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+</head>
+<body>
+    <header>
+        <div style="display:flex;
+        margin: 1vh 10vw;
+        justify-content: space-between;
+        color: white;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <div>
+                <h4>Get The App</h4>
+            </div>
+            <ul style="display: flex;">
+                <li style="font-size: 1em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: lighter;
+                padding-left: 30px;
+                list-style: none;">Add Restaurant</li>
+                <li style="font-size: 1em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: lighter;
+                padding-left: 30px;
+                list-style: none;">Log in</li>
+                <li style="font-size: 1em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: lighter;
+                padding-left: 30px;
+                list-style: none;">Sign Up</li>
+            </ul>
+        </div>
+        <div style="display:flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-top:7vh;
+        align-items:center;">
+            <img style="width:20vw;" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" width="500">
+            <h3 style="font-size: 2.1em;
+            color: whitesmoke;
+            font-weight: lighter;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;">Find the Best Restaurants, Cafés and Bars in India</h3> 
+            <div style="display: flex;
+            width: 55vw;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 10px;
+            background-color: white;
+            padding: 5px 0;">
+                <i style="font-size: 20px;
+                color:rgb(252,119,119);
+                padding-left: 10px;
+                padding-right: 10px;" class="fa-solid fa-location-dot"></i>
+                <p>Hyderabad |</p>
+                <i style="color: gray;
+                padding-left:10px;" class="fa-solid fa-magnifying-glass"></i>
+                <input style="outline:none;
+                border:none;
+                width: 50%;
+                padding-left: 10px;
+                font-size: 15px;" type="text" placeholder="Search for Restaurant, Cuisine or a Dish">
+            </div>
+        </div>
+        <div style="position: absolute;
+        top: -20vh;
+        z-index: -1;">
+            <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png"  width="1500" height="800">
+        </div>        
+        </div>
+    </header>
+    <section style="display: flex;
+    justify-content: center;
+    margin-bottom: 13vh;">
+        <div style="position: relative;
+        width: 265px;
+        margin: 3px 5px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 1px 2px gray;
+        background-color: rgb(243,240,240);">
+            <div style="position: absolute;
+            bottom: 3px;
+            align-items: center;
+            border-radius: 0 0 15px 15px;
+            background-color: white;
+            width: 100%;
+            height: 25%;
+            z-index: 2;"><a style="text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: rgb(56,56,56);
+    letter-spacing: 0.7px;" href="orderfood.html"><center>Order Food Online</center></a></div>
+            <img style="width: 100%;
+            border-radius: 15px;
+            border:1px solid rgb(204, 203, 203);
+            z-index: -1;" src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png">
+            </div>
+            <div style="position: relative;
+            width: 265px;
+            margin: 3px 5px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 1px 2px gray;
+            background-color: rgb(243,240,240);">
+                <div style="position: absolute;
+                bottom: 3px;
+                align-items: center;
+                border-radius: 0 0 15px 15px;
+                background-color: white;
+                width: 100%;
+                height: 25%;
+                z-index: 2;"><center><p style="text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: rgb(56,56,56);
+    letter-spacing: 0.7px;">Go Out for a Meal</center></p></div>
+                <img style="width: 100%;
+                border-radius: 15px;
+                border:1px solid rgb(204, 203, 203);
+                z-index: -1;" src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png">
+                </div>
+                <div style="position: relative;
+                width: 265px;
+                margin: 3px 5px;
+                overflow: hidden;
+                border-radius: 15px;
+                box-shadow: 0 1px 2px gray;
+                background-color: rgb(243,240,240);">
+                    <div style="position: absolute;
+                    bottom: 3px;
+                    align-items: center;
+                    border-radius: 0 0 15px 15px;
+                    background-color: white;
+                    width: 100%;
+                    height: 25%;
+                    z-index: 2;"><p style="text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: rgb(56,56,56);
+    letter-spacing: 0.7px;"><center>Zomato Pro</center></p></div>
+                    <img style="width: 100%;
+                    border-radius: 15px;
+                    border:1px solid rgb(204, 203, 203);
+                    z-index: -1;" src="https://everydaypower.com/wp-content/uploads/2020/01/50-Party-Quotes-that-Remind-You-that-Life-is-a-Party.jpg" height="200">
+                    </div>
+                     <div style="position: relative;
+                     width: 265px;
+                     margin: 3px 5px;
+                     overflow: hidden;
+                     border-radius: 15px;
+                     box-shadow: 0 1px 2px gray;
+                     background-color: rgb(243,240,240);">
+                        <div style="position: absolute;
+                        bottom: 3px;
+                        align-items: center;
+                        border-radius: 0 0 15px 15px;
+                        background-color: white;
+                        width: 100%;
+                        height: 25%;
+                        z-index: 2;"><p style="text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: rgb(56,56,56);
+    letter-spacing: 0.7px;"><center>Nightlife & Clubs</center></p></div>
+                        <img style="width: 100%;
+                        border-radius: 15px;
+                        border:1px solid rgb(204, 203, 203);
+                        z-index: -1;" src="https://cf.ltkcdn.net/cocktails/images/orig/270581-1600x1030-tequila-shots-that-make-impression.jpg" height="200">
+    </section>
+    <section style="margin: 60px 150px;">
+        <div>
+            <h2 style="font-size: 2.7em;
+            font-weight: lighter;
+            margin-bottom: 10px;">Collections</h2>
+            <div style="display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;">
+                <h6 style="margin: 0;
+                font-size: 1em;
+                font-weight: lighter;
+                color: gray;">
+                    Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends </h6>
+                    <span style="color: rgb(248,117,117);">All collections in Hyderabad &nbsp; <i style="color: rgb(248,117,117);" class="fas fa-caret-right"></i></span>
+            </div>
+        </div>
+        <div style="display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 130px;">
+            <div style="width: 255px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;">
+                <div style="position: absolute;
+                background: linear-gradient(transparent, black);
+                width: 100%;
+                height: 25%;
+                display: flex;
+                align-items: flex-end;
+                bottom: 0;"><span style="display: inline-block;
+    color: white;
+    padding-left: 15px;
+    font-size: 1rem;
+    padding-bottom: 5px;">Newly Opened <br> 5 Places </span><i style="color: white;
+    padding-bottom: 5px;" class="fas fa-caret-right"></i></div>
+                <img style="width: 255px;
+                height: 300px;
+                object-fit: cover;" src="https://imgmedia.lbb.in/media/2022/12/63a4409490478a2197c9f874_1671708820051.jpg">
+            </div>
+            <div style="width: 255px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;">
+                <div style="position: absolute;
+                background: linear-gradient(transparent, black);
+                width: 100%;
+                height: 25%;
+                display: flex;
+                align-items: flex-end;
+                bottom: 0;"><span style="display: inline-block;
+    color: white;
+    padding-left: 15px;
+    font-size: 1rem;
+    padding-bottom: 5px;">Trending This Week <br> 10 Places </span><i style="color: white;
+    padding-bottom: 5px;" class="fas fa-caret-right"></i></div>
+                <img style="width: 255px;
+                height: 300px;
+                object-fit: cover;" src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/05/25114414/Untitled-design-2022-05-25T114359.104.jpg">
+        </div>
+            <div style="width: 255px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;">
+                <div style="position: absolute;
+                background: linear-gradient(transparent, black);
+                width: 100%;
+                height: 25%;
+                display: flex;
+                align-items: flex-end;
+                bottom: 0;"><span style="display: inline-block;
+    color: white;
+    padding-left: 15px;
+    font-size: 1rem;
+    padding-bottom: 5px;">Best of Hyderabad <br> 17 Places </span><i style="color: white;
+    padding-bottom: 5px;" class="fas fa-caret-right"></i></div>
+                <img style="width: 255px;
+                height: 300px;
+                object-fit: cover;" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201509/chavadi---cover-pic_647_090115063451.jpg?VersionId=sLcWTDNRStMA_dNkj9FdZWkxV_2BKAXE&size=690:388">
+            </div>
+            <div style="width: 255px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;">
+                <div style="position: absolute;
+                background: linear-gradient(transparent, black);
+                width: 100%;
+                height: 25%;
+                display: flex;
+                align-items: flex-end;
+                bottom: 0;"><span style="display: inline-block;
+    color: white;
+    padding-left: 15px;
+    font-size: 1rem;
+    padding-bottom: 5px;">Great Cafes <br> 20 Places </span><i style="color: white;
+    padding-bottom: 5px;" class="fas fa-caret-right"></i></div>
+                <img style="width: 255px;
+                height: 300px;
+                object-fit: cover;" src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/1/c/g/p112214-16699673346389ade6de06e.jpg?tr=tr:n-xlarge">
+            </div>
+            </div>
+<h1 style="font-size: 2.1rem;
+font-weight: lighter;
+text-align: center;
+margin: 50px;
+color: rgb(56,56,56);">Popular localities in and around <strong>Hyderabad</strong></h1>
+<div style="display: grid;
+justify-content: center;
+grid-column-gap: 20px;
+grid-row-gap: 30px;
+grid-template-columns: 340px 340px 340px;
+grid-template-rows: auto;">
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Jubliee Hills (387dmount)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Madhapur cafe(Hyderabad)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Sainikpuri (van lavino Roadno5) (387dmount)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Road8 uppal (Lifafa)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Abids (ohris jiva)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Banjara Hills (Camelot 58/788)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Kukatpally (Farzi Cafe road no8)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <div style="border: 1px rgb(235, 233, 233);
+    box-shadow:0 1px 3px  rgb(226,223,223);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;">
+        <div style="overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;"><span style="color: rgb(65,64,64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;">Hiteccity (Blackdoor)</span><i class="fas fa-chevron-right"></i></div>
+    </div>
+
+</div>
+    </section>
+    <section style="display:flex;
+    margin:90px 0;
+    padding:40px 0;
+    justify-content: center;
+    background-color: rgb(255, 248, 248);">
+        <div style="display: flex;width: 760px;
+        overflow: hidden;">
+            <img style="width:200px;
+            height: 300px;
+            padding-right: 50px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGEzUFKAe4sBCM7fMRGPMDhiPngG8vtPTWGw&usqp=CAU">
+            
+            <div style="width: 470px;
+            margin-top: 20px;
+            padding-left: 10px;">
+                <h2 style="font-size: 2.7rem;
+                font-weight: lighter;
+                margin-bottom: 20px;
+                color: rgb(34,34,34);">Get The Zomato App</h2>
+                <p style="padding-bottom: 10px;
+                font-size: 0.95rem;
+                color: rgb(92,91,91);">We will send you a link, open it on your phone to download the app</p>
+                <div style="display: flex;
+                justify-content: space-between;
+                margin-right: 230px;
+                padding-bottom: 20px;">
+                    <div>
+                        <input style="accent-color: rgb(225,92,92);" type="radio" name="fill" id="email" checked>
+                        <label style="font-size: 1.1rem;
+                        color: rgb(49,49,49);" for="email">Email</label>
+                    </div>
+                    <div>
+                        <input style="accent-color: rgb(225,92,92);" type="radio" name="fill" id="phone">
+                        <label style="font-size: 1.1rem;
+                        color: rgb(49,49,49);" for="phone">Phone</label>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <input style="height: 46px;
+                    border-radius: 5px;
+                    width:270px;
+                    border: 1px solid rgb(184,183,183);
+                    outline: rgb(255,92,92);
+                    font-size: 1.3rem;
+                    padding-left: 15px;" type="text">
+                    <label for="" style="position: absolute;
+                    font-size: 1.3rem;
+                    left: 15px;
+                    top: 13px;
+                    color: gray;
+                    font-weight: lighter;">Email</label>
+                    <button style="width: 150px;
+                    border-radius: 6px;
+                    border: 1px solid rgb(253,104,104);
+                    background-color: rgb(253,104,104);
+                    font-size: 1.1rem;
+                    margin-left: 6px;
+                    color: white;">Share App Link</button>           
+                </div>
+                <p style="font-size: 1.5rem;
+                margin-top: 27px;
+                margin-bottom: 0;
+                color: gray;">Download App from</p>
+                <div></div>
+                <img style="width: 200px;
+                height: 150px;" src="https://static.vecteezy.com/system/resources/previews/002/520/836/non_2x/download-apps-button-google-play-and-app-store-vector.jpg">
+            </div>
+        </div>
+    </section>
+    <section style="margin: 60px 150px;">
+        <div style="margin-bottom: 110px;">
+            <h1 style="font-size: 1.9rem;
+            font-weight: lighter;
+            color: rgb(31,31,31);">Explore other options for you here</h1>
+            <h4 style="font-size: 1.4rem;
+            margin-bottom: 25px;
+            font-weight: lighter;
+            color: rgb(31,31,31);">Popular cuisines near me</h4>
+            <div>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Bakery food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Andhra food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Beverages food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Biryani food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Burger food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Chinese food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Desserts food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Ice Cream food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Mughlai food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">North Indian food near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Sandwich food near me</a>
+            
+            </div>
+        </div>
+        <div style="margin-bottom: 110px;">
+            <h4 style="font-size: 1.4rem;
+            margin-bottom: 25px;
+            font-weight: lighter;
+            color: rgb(31,31,31);">Popular restaurant types near me</h4>
+            <div>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Bakeries near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Bars near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Beverage Shops near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color:  gray;
+                font-size: 0.95rem;" href="#">Bhojanalya near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Casual Dining near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Clubs near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Confectioneries near me</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Dessert Parlors near me</a>
+                
+                </div>
+                </div>
+                <div sty="margin-bottom: 110px;">
+                    <h4 style="font-size: 1.4rem;
+                    margin-bottom: 25px;
+                    font-weight: lighter;
+                    color: rgb(31,31,31);">Top Restaurant Chains</h4>
+                <div>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Bikanervala</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Burger King</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Burger Singh</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Domino's</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">KFC</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">Krispy Kreme</a>
+                <i style="font-size: 0.3rem;
+                padding: 6px 5px;
+                color: gray;" class="fas fa-circle"></i>
+
+                <a style="text-decoration: none;
+                color: gray;
+                font-size: 0.95rem;" href="#">McDonald's</a>
+                </div>
+                </div>
+</section>
+<section>
+    <div style="padding: 40px 120px;
+    background-color: rgb(244,244,253);">
+        <div style="display: flex;
+        justify-content: space-between;">
+            <div>
+                <img style="width: 128px;
+                height: 32px;" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*">
+            </div>
+            <div style="display: flex;">
+                <div>
+                <span style="padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-right: 20px;
+                font-weight: 400;">India</span>
+                </div>
+                <div>
+                <span style="padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-right: 20px;
+                font-weight: 400;">English</span>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;
+    justify-content: space-around;
+    margin: 30px 0;">
+            <div style="width: 200px;">
+                <h4 style="font-weight: lighter;
+                color: rgb(22,22,22);
+                white-space: nowrap;">Company</h4>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#" >who we are</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Blog</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Careers</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Report Fraud</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Contact</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Investors Relation</a>
+            </div>
+            <div style="width: 200px;">
+                <h4 style="font-weight: lighter;
+                color: rgb(22,22,22);
+                white-space: nowrap;">For Foodies</h4>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#" >Code of Conduct</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Community</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Blogger Help</a>
+                <a style="display: inline-block;
+                width: 200px;
+                margin-bottom: 7px;
+                white-space: nowrap;
+                text-decoration: none;
+                color: gray;
+                font-size: 0.9rem;" href="#">Mobile Apps</a>
+            </div>
+            <div style="width: 200px;">
+            <h4 style="font-weight: lighter;
+            color: rgb(22,22,22);
+            white-space: nowrap;">For Restaurants</h4>
+            <a style="display: inline-block;
+            width: 200px;
+            margin-bottom: 7px;
+            white-space: nowrap;
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;" href="#">Add Restaurants</a>
+            <h4 style="font-weight: lighter;
+            color: rgb(22,22,22);
+            white-space: nowrap;">For Enterprises</h4>
+            <a style="display: inline-block;
+            width: 200px;
+            margin-bottom: 7px;
+            white-space: nowrap;
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;" href="#" >Zomato for Work</a>
+            </div>
+            <div style="width: 200px;">
+            <h4 style="font-weight: lighter;
+            color: rgb(22,22,22);
+            white-space: nowrap;">For You</h4>
+            <a style="display: inline-block;
+            width: 200px;
+            margin-bottom: 7px;
+            white-space: nowrap;
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;" href="#" >Privacy</a>
+            <a style="display: inline-block;
+            width: 200px;
+            margin-bottom: 7px;
+            white-space: nowrap;
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;" href="#">Terms</a>
+            <a style="display: inline-block;
+            width: 200px;
+            margin-bottom: 7px;
+            white-space: nowrap;
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;" href="#">Security</a>
+            <a style="display: inline-block;
+            width: 200px;
+            margin-bottom: 7px;
+            white-space: nowrap;
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;" href="#">Sitemap</a>
+            </div>
+            <div style="width: 137px;
+            height: 40px;
+            margin-top: 11px;
+            cursor: pointer;" >
+            <h4 style="font-weight: lighter;
+            color: rgb(22,22,22);
+            white-space: nowrap;">Social Links</h4>
+            <div style="width: 200px;">
+            <i style="margin-left: 5px;
+            margin-bottom: 5px;" class="fab fa-facebook"></i>
+            <i style="margin-left: 5px;
+            margin-bottom: 5px;" class="fab fa-twitter"></i>
+            <i style="margin-left: 5px;
+            margin-bottom: 5px;" class="fab fa-instagram"></i>
+            </div>
+            <img style="width: 137px;
+            height: 40px;
+            margin-top: 11px;
+            cursor: pointer;" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png">
+            <img style="width: 137px;
+            height: 40px;
+            margin-top: 11px;
+            cursor: pointer;" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png">
+            </div>
+    </div>
+
+<hr>
+<p style="padding: 10px 0;
+color: gray;
+font-size: 0.9rem;">&copy;By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+</div>
+</section>
+    
+</body>
+</html>
+
